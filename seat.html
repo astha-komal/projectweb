@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -27,6 +27,38 @@
 
 </div>
 
+<script src="js/seat.js"></script>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Seat Selection - EasyBus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    Select Your Seat
+</header>
+
+<div class="seat-container">
+    <h3 id="busInfo"></h3>
+
+    <div id="seatContainer"></div>
+
+    <div class="summary">
+        <p>Selected Seats: <span id="selectedSeats">None</span></p>
+        <p>Total Price: ₹<span id="totalPrice">0</span></p>
+    </div>
+
+    <button type="button" onclick="confirmBooking()" class="confirm-btn">
+        Proceed to Passenger Details
+    </button>
+</div>
+
+<script src="js/auth.js"></script>
 <script src="js/seat.js"></script>
 </body>
 </html>

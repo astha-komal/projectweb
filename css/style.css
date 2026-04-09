@@ -1,8 +1,8 @@
 
-body {
+/*body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: lightgray; /* FIXED (was turning black) */
+    background-color: lightgray; 
 }
 
 header {
@@ -187,7 +187,7 @@ footer {
 }
 .aisle {
     display: inline-block;
-    width: 40px;   /* THIS CREATES SPACE */
+    width: 40px;  
 }
 
 .passenger-page {
@@ -535,4 +535,622 @@ body {
     font-size: 16px;
     margin: 10px 0;
 }
+*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+}
 
+header {
+    background-color: rgb(244, 92, 92);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#links {
+    background-color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+#links a {
+    color: black;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+#links a:hover {
+    color: rgb(244, 92, 92);
+}
+
+.banner {
+    background-color: darkblue;
+    height: 300px;
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 32px;
+    font-weight: bold;
+    background-image: url("../image/busimage.jpg");
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.booking-box {
+    width: 60%;
+    margin: -40px auto 40px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+    text-align: center;
+}
+
+.booking-box input {
+    padding: 10px;
+    margin: 10px;
+    width: 180px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.booking-box input:focus {
+    border: 2px solid green;
+    outline: none;
+}
+
+.booking-box button {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking-box button:hover {
+    background-color: darkgreen;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* ===== BUS PAGE ===== */
+.bus-container {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.bus-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.bus-card h3 {
+    margin-bottom: 10px;
+}
+
+.bus-card p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.bus-card:hover {
+    transform: scale(1.02);
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 10px 18px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: darkgreen;
+}
+
+.no-bus {
+    text-align: center;
+    font-size: 20px;
+    color: red;
+}
+
+/* ===== SEAT PAGE ===== */
+.seat-container {
+    width: 400px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+    text-align: center;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    background-color: lightgray;
+    display: inline-block;
+    line-height: 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.seat:hover {
+    background-color: gray;
+}
+
+.seat.selected {
+    background-color: green;
+    color: white;
+}
+
+.seat.booked {
+    background-color: red;
+    color: white;
+    pointer-events: none;
+}
+
+.summary {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.confirm-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.confirm-btn:hover {
+    background-color: darkgreen;
+}
+
+.aisle {
+    display: inline-block;
+    width: 40px;
+}
+
+/* ===== PASSENGER PAGE ===== */
+.passenger-page {
+    background-color: lightgrey;
+    padding: 20px 0;
+}
+
+.passenger-page .main {
+    width: 650px;
+    margin: 30px auto;
+}
+
+.passenger-page .card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.passenger-page h2 {
+    margin-top: 0px;
+}
+
+.passenger-page .form-group {
+    margin-bottom: 15px;
+}
+
+.passenger-page input,
+.passenger-page select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid lightgrey;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.passenger-page .phone-row select {
+    width: 20%;
+    display: inline-block;
+    margin-right: 3%;
+}
+
+.passenger-page .phone-row input {
+    width: 75%;
+    display: inline-block;
+}
+
+.passenger-page #foot {
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.passenger-page .gender {
+    margin-top: 8px;
+}
+
+.passenger-page .gender label {
+    display: inline-block;
+    margin-right: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.passenger-page .gender input {
+    margin-right: 5px;
+    width: auto;
+}
+
+.passenger-page .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.passenger-page .submit-btn:hover {
+    background-color: darkgreen;
+}
+
+/* ===== BOOKINGS PAGE ===== */
+.bookings-page {
+    background-color: lightgray;
+}
+
+.bookings-container {
+    width: 70%;
+    margin: 30px auto;
+}
+
+.bookings-container h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.booking-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.booking-card h3 {
+    margin-top: 0;
+    color: rgb(244, 92, 92);
+}
+
+.booking-card p {
+    margin: 6px 0;
+    font-size: 15px;
+}
+
+.status {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.confirmed {
+    color: green;
+}
+
+.no-bookings {
+    text-align: center;
+    font-size: 18px;
+    color: gray;
+    padding: 40px 0;
+}
+
+/* ===== HELP PAGE ===== */
+.help-page {
+    background-color: lightgray;
+}
+
+.help-container {
+    width: 70%;
+    margin: 30px auto;
+}
+
+.help-container .card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 8px lightgray;
+}
+
+.help-container .card h2 {
+    margin-top: 0;
+    color: rgb(244, 92, 92);
+}
+
+.help-container ol {
+    padding-left: 20px;
+    line-height: 2;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid lightgrey;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: darkgreen;
+}
+
+/* ===== CONFIRM PAGE ===== */
+.confirm-container {
+    width: 450px;
+    margin: 80px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.confirm-container h2 {
+    color: green;
+    margin-bottom: 15px;
+}
+
+.confirm-container #details {
+    font-size: 15px;
+    text-align: left;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    line-height: 2;
+    margin: 15px 0;
+}
+
+/* ===== LOGIN PAGE ===== */
+.login-page {
+    background: #f5f6fa;
+    min-height: 100vh;
+}
+
+.login-page .login-box {
+    width: 350px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-page .login-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-page .input-box {
+    margin-bottom: 18px;
+}
+
+.login-page .input-box label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.login-page .input-box input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.login-page .login-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-page .login-btn:hover {
+    opacity: 0.9;
+}
+
+.login-page .extra {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.login-page .extra a {
+    color: #1e3c72;
+    text-decoration: none;
+}
+
+.login-page .extra a:hover {
+    text-decoration: underline;
+}
+
+/* ===== REGISTER PAGE ===== */
+.register-page {
+    background: #f5f6fa;
+    min-height: 100vh;
+}
+
+.register-page .register-box {
+    width: 350px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.register-page .register-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-page .input-box {
+    margin-bottom: 18px;
+}
+
+.register-page .input-box label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.register-page .input-box input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.register-page .register-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #11998e, #38ef7d);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register-page .register-btn:hover {
+    opacity: 0.9;
+}
+
+.register-page .extra {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.register-page .extra a {
+    color: #11998e;
+    text-decoration: none;
+}
+
+.register-page .extra a:hover {
+    text-decoration: underline;
+}
+
+/* ===== PROFILE PAGE ===== */
+.profile-page {
+    background: #f5f6fa;
+    min-height: 100vh;
+}
+
+.profile-page .profile-box {
+    width: 380px;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profile-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(244, 92, 92);
+}
+
+.profile-page p {
+    font-size: 16px;
+    margin: 12px 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.logout-btn {
+    width: 100%;
+    padding: 11px;
+    background: crimson;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.logout-btn:hover {
+    background: darkred;
+}
+
+/* ===== NAV LOGOUT LINK ===== */
+#nav-logout {
+    color: crimson;
+    font-weight: bold;
+}
+
+#nav-logout:hover {
+    color: darkred;
+}

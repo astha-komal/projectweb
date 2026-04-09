@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -30,6 +30,45 @@
     </div>
 </div>
 
+<script src="js/login.js"></script>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login - EasyBus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="login-page">
+
+<div class="login-box">
+    <h2>Login</h2>
+
+    <form onsubmit="return loginUser()">
+        <div class="input-box">
+            <label>Username</label>
+            <!-- FIX: added id="username" (was missing, so login.js couldn't read it) -->
+            <input type="text" id="username" placeholder="Enter Username" required>
+        </div>
+
+        <div class="input-box">
+            <label>Password</label>
+            <!-- FIX: added id="password" -->
+            <input type="password" id="password" placeholder="Enter Password" required>
+        </div>
+
+        <button class="login-btn" type="submit">Login</button>
+    </form>
+
+    <div class="extra">
+        <p>Don't have an account? <a href="register.html">Register here</a></p>
+    </div>
+</div>
+
+<script src="js/auth.js"></script>
 <script src="js/login.js"></script>
 </body>
 </html>
