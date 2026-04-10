@@ -1,20 +1,7 @@
-// check login status
-/*let isLoggedIn = localStorage.getItem("isLoggedIn");
 
-if (isLoggedIn !== "true") {
-    window.location.href = "login.html";
-}*/
-/* ===== auth.js =====
-   Include this on EVERY page before other scripts.
-   It handles login checks, getting current user, and logout.
-*/
-
-// Returns true if someone is logged in this session
 function isLoggedIn() {
     return sessionStorage.getItem("loggedInUser") !== null;
 }
-
-// Returns the full user object of whoever is logged in, or null
 function getCurrentUser() {
     var username = sessionStorage.getItem("loggedInUser");
     if (!username) return null;
@@ -24,16 +11,12 @@ function getCurrentUser() {
     }
     return null;
 }
-
-// Call on protected pages — redirects to login if not logged in
 function requireLogin() {
     if (!isLoggedIn()) {
         alert("Please login to continue.");
         window.location.href = "login.html";
     }
 }
-
-// Shows Logout in nav if logged in, shows Login if not
 function updateNavBar() {
     var loginLink   = document.getElementById("nav-login");
     var logoutLink  = document.getElementById("nav-logout");
@@ -49,8 +32,6 @@ function updateNavBar() {
         if (profileLink) profileLink.style.display = "none";
     }
 }
-
-// Logs the user out and sends them to login page
 function logoutUser() {
     sessionStorage.removeItem("loggedInUser");
     window.location.href = "login.html";

@@ -1,12 +1,4 @@
-/*let user = JSON.parse(localStorage.getItem("user"));
-
-if (user) {
-    document.getElementById("p-username").textContent = user.username;
-    document.getElementById("p-email").textContent = user.email;
-}*/
-/* ===== profile.js ===== */
-
-window.onload = function () {
+/*window.onload = function () {
     requireLogin();
 
     var user = getCurrentUser();
@@ -14,4 +6,4 @@ window.onload = function () {
         document.getElementById("p-username").textContent = user.username;
         document.getElementById("p-email").textContent    = user.email;
     }
-};
+};*/
